@@ -1,0 +1,24 @@
+/* Add smooth scrolling behavior globally */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Ensure stable scrollbar to prevent layout shifts */
+.scroll-smooth {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+/* Optional: Style the scrollbar for better visibility */
+.scroll-smooth::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroll-smooth::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scroll-smooth::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--muted));
+  border-radius: 4px;
+}
